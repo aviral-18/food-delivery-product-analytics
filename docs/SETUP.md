@@ -77,6 +77,21 @@ Flags:
 Tune volume via `.env` (`GEN_CUSTOMERS`, `GEN_RESTAURANTS`, `GEN_ORDERS`, …). The
 generator is deterministic given `SEED`.
 
+### Schema only (no data)
+
+If you just want the empty schema (e.g. for tests, or to run your own seed):
+
+```bash
+python -m scripts.init_db                 # create tables from the ORM models
+python -m scripts.init_db --drop          # drop & recreate the tables
+python -m scripts.init_db --with-users    # also seed the 3 default operator accounts
+```
+
+The schema is defined entirely by the SQLAlchemy models in `app/models/` and
+created via `Base.metadata.create_all()` — there is no separate migration tool to
+install. Both `init_db` and the generator create the tables from those models, so
+the repo contains everything needed to recreate the database from scratch.
+
 ---
 
 ## 5. Run the API
