@@ -1,0 +1,13 @@
+# Normalize line endings to LF in the repository (consistent across OSes).
+* text=auto eol=lf
+
+# Treat these as binary (never normalize).
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.xlsx binary
+*.db binary
+*.sqlite3 binary

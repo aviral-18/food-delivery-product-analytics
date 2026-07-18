@@ -1,0 +1,32 @@
+# ---- Web framework ----
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# ---- Database ----
+SQLAlchemy==2.0.36
+psycopg[binary]==3.2.3
+
+# ---- Validation / settings ----
+pydantic==2.10.4
+pydantic-settings==2.7.0
+email-validator==2.2.0
+
+# ---- Auth ----
+PyJWT==2.10.1
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+
+# ---- Analytics / data ----
+pandas==2.2.3
+numpy==2.2.1
+python-dateutil==2.9.0.post0
+Faker==33.1.0
+
+# ---- Exports ----
+openpyxl==3.1.5
+reportlab==4.2.5
+
+# ---- Dev / test ----
+pytest==8.3.4
+httpx==0.28.1
