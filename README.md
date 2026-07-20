@@ -1,4 +1,4 @@
-# 🍔 Eternal — Food Delivery Product Analytics Platform
+# Food Delivery Product Analytics Platform
 
 > An internal, enterprise-grade **Product Analytics platform** for a food-delivery
 > marketplace — the kind of tool a Product Manager or Product Analyst at Eternal
